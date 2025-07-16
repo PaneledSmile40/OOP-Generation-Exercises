@@ -15,5 +15,5 @@ public class Ex01 {
 
 		Console.print("La somma dei due numeri è: "+(somma=num1+num2)+"\nLa media dei due numeri è: "+(somma/2.0));
 	}
-
+	
 }
