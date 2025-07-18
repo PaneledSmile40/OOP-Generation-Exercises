@@ -11,6 +11,13 @@ public class Ex02 {
 		
 		System.out.println("Quanti numeri vuoi sommare?");
 		n = sc.nextInt();
+		
+		if(n<1) {
+			System.out.println("Se non vuoi che ti sommo i numeri cosa mi esegui a fare. Spegnimento...");
+			sc.close();
+			return;
+		}
+		
 		for(int i=0;i<n;i++) {
 			System.out.println("Inserisci un numero. Numeri attualmente inseriti: " + i);
 			sum += sc.nextInt();

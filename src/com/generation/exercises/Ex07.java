@@ -9,6 +9,7 @@ public class Ex07 {
 		int c = 101;
 		int rnd =  (int) (Math.random()*100);
 		System.out.println("Indovina a che numero sto pensando");
+		// testing System.out.println(rnd);
 		
 		while(rnd != c) {
 			if (c!=101) {

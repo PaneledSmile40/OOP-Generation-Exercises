@@ -14,7 +14,7 @@ public class Ex04 {
 			System.out.println("Inserisci un numero");
 			n = sc.nextInt();
 			sum += n;
-		}while(n%3==0 || n%3==0);
+		}while(n%2==0 || n%3==0);
 		
 		System.out.println("Condizione violata!");
 		sum-=n;
