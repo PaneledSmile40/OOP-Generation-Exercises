@@ -34,7 +34,7 @@ public class Ex02 {
 		}
 		
 		
-		System.out.println("Password corretta, login effettuato correttamente");
+		System.out.println("Login effettuato correttamente");
 		sc.close();
 	}
 
