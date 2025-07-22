@@ -27,8 +27,9 @@ public class Ex10 {
 			switch (c) {
 			case 1:
 				
-				System.out.print("Inserisci prezzo articolo");
-				tempPrice = Double.parseDouble(sc.nextLine());
+				System.out.println("Inserisci prezzo articolo");
+				tempPrice = sc.nextDouble();
+				sc.nextLine();
 				
 				if(tempPrice <= 0.0) {
 					System.out.println("ERROR: Prezzo articolo invalido. cleanup");
