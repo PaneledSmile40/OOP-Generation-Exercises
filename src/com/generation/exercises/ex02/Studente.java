@@ -32,12 +32,15 @@ public class Studente {
 	};
 	
 	public static boolean atLeastTwo(int voto1, int voto2, int voto3) {
-		int c=0;
-		if(voto1 >= 6) {c++;}
-		if(voto2 >= 6) {c++;}
-		if(voto3 >= 6) {c++;}
-		return c >= 2; // ? true : false;
+		//int c=0;
+		//if(voto1 >= 6) {c++;}
+		//if(voto2 >= 6) {c++;}
+		//if(voto3 >= 6) {c++;}
+		//return c >= 2; // ? true : false;
+		return ((voto1>=6 && voto2>=6)||(voto1>=6 && voto3>=6)||(voto2>=6 && voto3>=6));
 	}
+	
+	
 	
 	
 	public double media() {
