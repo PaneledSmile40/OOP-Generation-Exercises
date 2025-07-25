@@ -5,8 +5,13 @@ public class Studente {
 	int eta,votoIta,votoMusica,votoStoria;
 	
 	public Studente() {}
-	public Studente (String nome, String cognome, String eta, double votoIta, double votoMusica, double votoStoria ) {
+	public Studente (String nome, String cognome, int eta, int votoIta, int votoMusica, int votoStoria ) {
 		this.nome = nome;
+		this.cognome = cognome;
+		this.eta = eta;
+		this.votoIta = votoIta;
+		this.votoMusica = votoMusica;
+		this.votoStoria = votoStoria;
 	}
 	
 	
@@ -36,7 +41,7 @@ public class Studente {
 	
 	
 	public double media() {
-		return ((double)sum(votoIta,votoMusica,votoStoria) / 3);
+		return (double)((int)(((double)sum(votoIta,votoMusica,votoStoria) / 3)*100))/100;
 	}
 	
 	
