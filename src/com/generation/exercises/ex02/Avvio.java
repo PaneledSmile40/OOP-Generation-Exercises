@@ -22,7 +22,7 @@ public class Avvio {
 		student01.setEta(student01.getEta()+1);
 		student01.setVotoStoria(1);
 		
-		System.out.println(student01.infoStudente());
+		System.out.println("\nDopo dei cambiamenti\n" + student01.infoStudente());
 		System.out.println("La media di " + student01.getNome() + " " + student01.getCognome() + " è " + (student01.isMaggiorenne() ? "maggiorenne" : "minorenne"));
 		System.out.println("Lo studente " + student01.getNome() + " " + student01.getCognome() + " è " + (student01.isPromosso() ? "promosso!" : "bocciato"));
 		System.out.println("La media di " + student01.getNome() + " " + student01.getCognome() + " è " + student01.media());

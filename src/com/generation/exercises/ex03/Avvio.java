@@ -29,7 +29,7 @@ public class Avvio {
 			if (user01.checkUser(username)) {
 				for (c = 0; c < 2; c++) {
 					if(c!=0) {
-						System.out.println("Nome utente errato, tentativi rimanenti " + (2-c));
+						System.out.println("Password errata, tentativi rimanenti " + (2-c));
 					}
 					System.out.println("Inserisci password");
 					password = sc.nextLine();
@@ -45,7 +45,7 @@ public class Avvio {
 			if (user02.checkUser(username)) {
 				for (c = 0; c < 2; c++) {
 					if(c!=0) {
-						System.out.println("Nome utente errato, tentativi rimanenti " + (2-c));
+						System.out.println("Password errata, tentativi rimanenti " + (2-c));
 					}
 					System.out.println("Inserisci password");
 					password = sc.nextLine();
@@ -60,7 +60,7 @@ public class Avvio {
 			if (user03.checkUser(username)) {
 				for (c = 0; c < 2; c++) {
 					if(c!=0) {
-						System.out.println("Nome utente errato, tentativi rimanenti " + (2-c));
+						System.out.println("Password errata, tentativi rimanenti " + (2-c));
 					}
 					System.out.println("Inserisci password");
 					password = sc.nextLine();
@@ -75,7 +75,7 @@ public class Avvio {
 			if (user04.checkUser(username)) {
 				for (c = 0; c < 2; c++) {
 					if(c!=0) {
-						System.out.println("Nome utente errato, tentativi rimanenti " + (2-c));
+						System.out.println("Password errata, tentativi rimanenti " + (2-c));
 					}
 					System.out.println("Inserisci password");
 					password = sc.nextLine();
@@ -90,7 +90,7 @@ public class Avvio {
 			if (user05.checkUser(username)) {
 				for (c = 0; c < 2; c++) {
 					if(c!=0) {
-						System.out.println("Nome utente errato, tentativi rimanenti " + (2-c));
+						System.out.println("Password errata, tentativi rimanenti " + (2-c));
 					}
 					System.out.println("Inserisci password");
 					password = sc.nextLine();
