@@ -1,3 +1,4 @@
+/*
 package com.generation.exercises.ex03;
 
 import java.util.Scanner;
@@ -30,13 +31,13 @@ public class Avvio {
 		Infermiere infermiere03 = new Infermiere();
 		
 		
-		Scanner sc = new Scanner(System.in);
-		int selector=0;
-		while(selector!=5)
-			System.out.println
-		switch (selector) {
-			case 1
-		}
+		//Scanner sc = new Scanner(System.in);
+		//int selector=0;
+		//while(selector!=5)
+		//	System.out.println
+		//switch (selector) {
+		//	case 1
+		//}
 		
 		
 		
@@ -52,7 +53,8 @@ public class Avvio {
 		
 		
 		
-		sc.close();
+		//sc.close();
 	}
 
 }
+*/
