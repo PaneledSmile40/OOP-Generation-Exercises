@@ -25,8 +25,7 @@ public abstract class OD implements ODinterface{
 		if (getClass() != o.getClass())
 			return false;
 		OD other = (OD) o;
-		return Objects.equals(titolo, other.titolo) && Objects.equals(artista, other.artista)
-				&& Objects.equals(esposta, other.esposta);
+		return Objects.equals(titolo, other.titolo) && Objects.equals(artista, other.artista);
 	}
 	
 	
