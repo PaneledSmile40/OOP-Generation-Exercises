@@ -31,10 +31,10 @@ public class Q extends OD{
 		return "Quadro" + super.toString() + "\naltezza: " + altezza + "\nlarghezza: " + larghezza ;
 	}
 
-	@Override
-	public String stampIngombro() {
-		return printIngombro()+" m^2";
-	}
+	//@Override
+	//public String stampIngombro() {
+	//	return printIngombro()+" m^2";
+	//}
 	
 	@Override
 	public double printIngombro() {

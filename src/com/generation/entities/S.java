@@ -40,10 +40,10 @@ public class S extends OD{
 		return "Quadro" + super.toString() + "\naltezza: " + altezza + "\nlarghezza: " + larghezza + "\nprofondità: " + profondita;
 	}
 
-	@Override
-	public String stampIngombro() {
-		return printIngombro()+" m^3";
-	}
+	//@Override
+	//public String stampIngombro() {
+	//	return printIngombro()+" m^3";
+	//}
 	
 	@Override
 	public double printIngombro() {

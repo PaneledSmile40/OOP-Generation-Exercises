@@ -29,13 +29,6 @@ public abstract class OD implements ODinterface{
 	}
 	
 	
-	public abstract double printIngombro();
-	
-	public void cambiaEsposizione() {
-		setEsposta(!isEsposta());
-	}
-	
-
 	@Override
 	public String toString() {
 		return "\ntitolo: " + titolo + "\nartista: " + artista + "\nesposta: " + esposta;
@@ -60,5 +53,9 @@ public abstract class OD implements ODinterface{
 		this.esposta = esposta;
 	}
 	
+	public abstract double printIngombro();
 	
+		//public void cambiaEsposizione() {
+		//	setEsposta(!isEsposta());
+		//}
 }
