@@ -47,9 +47,7 @@ public class Articolo {
         return numeroArticoli;
     }
     
-    public static String confronta(Articolo a, Articolo b) {
-    	return a.getDataAcquisto().isBefore(b.getDataAcquisto())
-    	        ? a.getTitolo()
-    	        : b.getTitolo();
+    public static int confronta(Articolo a, Articolo b) {
+    	return a.getDataAcquisto().compareTo(b.getDataAcquisto());
     }
 }

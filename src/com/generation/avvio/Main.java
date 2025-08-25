@@ -8,17 +8,27 @@ public class Main {
 
 	public static void main(String[] args) {
 		Articolo Scarpe = new Articolo("scarpe da trekking",LocalDate.of(2025,07,20));
-		Articolo MutaSub = new Articolo("muta da sub",LocalDate.of(2024,03,16));
+		Articolo MutaSub = new Articolo("muta da sub",LocalDate.of(2025,07,20));
 		Articolo Corda = new Articolo("corda da arrampicata",LocalDate.of(2022,9,16));
 		
-		String temp = Articolo.confronta(Scarpe,MutaSub);
-		String piuVecchio = temp.equalsIgnoreCase("scarpe da trekking") ? Articolo.confronta(Scarpe,Corda) : Articolo.confronta(MutaSub,Corda);
+		//int temp = Articolo.confronta(Scarpe,MutaSub);
+		//if(temp == 0) {
+		//	if (Articolo.confronta(Scarpe,Corda)<0) {
+		//		System.out.println("Gli articoli più vecchi sono: " + Scarpe.getTitolo() + MutaSub.getTitolo());
+		//	}else {
+		//		System.out.println("L'articoli più vecchio è: " + Corda.getTitolo());
+		//	}
+		//}
+		
+		if(Articolo.confronta(Scarpe,MutaSub)<=0) {
+			
+		}
 		
 		
-		
+		System.out.println(Articolo.getNumeroArticoli());
 		
 		System.out.println(Scarpe.getBarcode());
-		System.out.println(Corda.getBarcode());
+		System.out.println(MutaSub.getBarcode());
 		
 		System.out.println("L'articolo più vecchio è: " + piuVecchio);
 		
