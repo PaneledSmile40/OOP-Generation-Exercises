@@ -21,7 +21,15 @@ public class Main {
 		//}
 		
 		if(Articolo.confronta(Scarpe,MutaSub)<=0) {
-			
+			if(Articolo.confronta(Scarpe,Corda)<=0) {
+				if(Articolo.confronta(Scarpe,Corda)<0) {
+					System.out.println("L'articolo più vecchio è: " + Scarpe.getTitolo());
+				}else {
+					System.out.println("Gli articoli più vecchi  sono: " + Scarpe.getTitolo() + " " + Corda.getTitolo());
+				}
+			}else {
+				
+			}
 		}
 		
 		
