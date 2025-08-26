@@ -6,51 +6,43 @@ public class Main {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Quanti numeri vuoi inserire?");
+		System.out.println("Quanti amici vuoi invitare?");
 		int c = sc.nextInt();
-		int[] numeri = new int[c];
+		if(c == 0) {
+			System.out.println("Non hai amici ... sigh ... chiudo");
+			sc.close();
+			return;
+		}
+		String[] invitati = new String[c];
+		sc.nextLine();
 		
-		for(int i=0; i < c;i++) {
-			System.out.println("Inserire numeri interi");
-			numeri[i] = sc.nextInt();;
+		String temp = new String();
+		
+		
+		for(int i = 0; i < c; i++) {
+			System.out.println("Inserire nomi invitati");
+			temp = sc.nextLine();
+			invitati[i] = temp != "" ? temp : "ERRORE";
 		}
 		
-//		System.out.println("Stampa array");
-//		for(int i=0; i < numeri.length;i++) {
-//			System.out.println(numeri[i]);
-//		}
-//		
-//		int somma=0;
-//		for(int i=0; i < numeri.length;i++) {
-//			somma+=numeri[i];
-//		}
-//		System.out.println("La somma dei numeri nell'array è: " + somma);
-//		
-//		int divisore=numeri.length;
-//		for(int i=0; i < numeri.length;i++) {
-//			if(numeri[i]!=0)continue;
-//			divisore--;
-//		}
-//		double media = somma/divisore;
-//		System.out.println("La media dei numeri nell'array escludendo gli zeri è: " + media);
+		String message = new String();
+		int numeroDiErrori = 0;
 		
-		
-		int max=0,min=0;
-		for(int i=0; i < numeri.length;i++) {
-			if(i==0) {
-				max=numeri[i];
-				min=numeri[i];
-				continue;
+		for(int i = 0; i < invitati.length; i++) {
+			if(invitati[i].equals("ERRORE")) {
+				numeroDiErrori++; 
+				continue; 
 			}
-			if(numeri[i]>max) {
-				max=numeri[i];
-			}else if(numeri[i]<min){
-				min=numeri[i];
+			if(i == invitati.length-1) {
+				message += invitati[i] + ".";
+				break;
 			}
-			
+			message += invitati[i] + ", ";
 		}
-		System.out.println("Numero maggiore: " + max);
-		System.out.println("Numero minore: " + min);
+		
+		System.out.println(message);
+		System.out.println("Sono presenti " + numeroDiErrori + " errori");
+		
 		
 		sc.close();
 		
