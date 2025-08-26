@@ -28,18 +28,20 @@ public class Main {
 		String message = new String();
 		int numeroDiErrori = 0;
 		
+		
 		for(int i = 0; i < invitati.length; i++) {
 			if(invitati[i].equals("ERRORE")) {
 				numeroDiErrori++; 
 				continue; 
 			}
-			if(i == invitati.length-1) {
-				message += invitati[i] + ".";
-				break;
-			}
-			message += invitati[i] + ", ";
+			if (!message.equals("")){
+				message += ", " + invitati[i];
+			}else message += invitati[i];
+			
 		}
-		
+		message += message!=null ? "." : "Nessun invitato valido";
+
+
 		System.out.println(message);
 		System.out.println("Sono presenti " + numeroDiErrori + " errori");
 		
