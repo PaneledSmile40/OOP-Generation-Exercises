@@ -128,6 +128,8 @@ public class Main {
 				anno = Integer.parseInt(sc.nextLine());
 				System.out.println("Inserisci durata in giorni");
 				durata = Integer.parseInt(sc.nextLine());
+				
+				//TODO complete interactive menu
 				break;
 			case 2:
 				break;
