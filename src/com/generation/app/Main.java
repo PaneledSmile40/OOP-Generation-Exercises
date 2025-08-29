@@ -296,6 +296,8 @@ public class Main {
 			}
 
 		} while (c != 5);
+		
+		//viaggi.get(2).
 
 		sc.close();
 
