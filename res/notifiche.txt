@@ -1,0 +1,11 @@
+tipo,destinatario,titolo,messaggio
+EMAIL,mario@azienda.com,Report Mensile,Ciao Mario, ecco il tuo report...
+SMS,+39123456789,,Il tuo ordine è pronto!
+PUSH,device123,Nuova offerta,Sconto del 20% valido solo oggi!
+EMAIL,luca@azienda.com,Avviso di sicurezza,Abbiamo rilevato un accesso sospetto al tuo account.
+SMS,+39876543210,,Il tuo codice OTP è: 543210
+PUSH,device456,Promozione esclusiva,Spedizione gratuita su tutti i prodotti fino a mezzanotte!
+EMAIL,anna@azienda.com,Conferma registrazione,Benvenuta Anna! La tua registrazione è andata a buon fine.
+SMS,+39777888999,,La tua prenotazione al ristorante è confermata per le 20:30.
+PUSH,device789,Nuovo messaggio,Hai ricevuto un nuovo messaggio dal supporto clienti.
+EMAIL,sales@azienda.com,Ordine completato,Il tuo ordine #12345 è stato spedito con corriere DHL.
