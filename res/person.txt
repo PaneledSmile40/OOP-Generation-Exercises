@@ -1,0 +1,6 @@
+1001,Mario,Rossi,1980-09-08,Milano
+1002,Luigi,Verdi,2003-03-21,Torino
+1003,Sara,Blu,1997-02-16,Bari
+1004,Marta,Neri,1965-05-19,Roma
+1005,Mirco,Bianchi,2010-11-24,Cagliari
+1006,Lisa,Gialli,2013-10-04,Messina
