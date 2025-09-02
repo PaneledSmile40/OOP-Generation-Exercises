@@ -14,11 +14,13 @@ public class Coni {
 		listaAtleti = new ArrayList<Persona>();
 		Scanner scanner = new Scanner(new File(percorso));
 		while(scanner.hasNextLine()) {
-			String[] temp = (scanner.nextLine().split(","));
-			switch(temp[0].toLowerCase()) {
-			case ("calciatore") -> listaAtleti.add(new Calciatore(temp[1] +" "+ temp[2], Integer.parseInt(temp[3]),Integer.parseInt(temp[4]),temp[5],temp[6]) );
-			case ("tennista") -> listaAtleti.add(new Tennista(temp[1] +" "+ temp[2], Integer.parseInt(temp[3]), temp[4], temp[5]) );
-			case ("nuotatore") -> listaAtleti.add(new Nuotatore(temp[1] +" "+ temp[2], Integer.parseInt(temp[3]),temp[4]) );
+			String[] personData = (scanner.nextLine().split(","));
+			switch(personData[0].toLowerCase()) {
+			case ("calciatore") -> listaAtleti.add(new Calciatore(personData[1] +" "+ personData[2], Integer.parseInt(personData[3]),Integer.parseInt(personData[4]),personData[5],personData[6]) );
+			case ("tennista") -> listaAtleti.add(new Tennista(personData[1] +" "+ personData[2], Integer.parseInt(personData[3]), personData[4], personData[5]) );
+			case ("nuotatore") -> listaAtleti.add(new Nuotatore(personData[1] +" "+ personData[2], Integer.parseInt(personData[3]),personData[4]) );
+			case ("pugile") -> listaAtleti.add(new Pugile(personData[1] +" "+ personData[2], Integer.parseInt(personData[3]), Integer.parseInt(personData[4])) );
+			case ("pilota") -> listaAtleti.add(new Pilota(personData[1] +" "+ personData[2], Integer.parseInt(personData[3]),personData[4],personData[5]) );
  			}
 		}		
 		scanner.close();

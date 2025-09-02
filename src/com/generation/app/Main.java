@@ -2,8 +2,13 @@ package com.generation.app;
 
 import java.io.FileNotFoundException;
 
+import com.generation.entity.Calciatore;
 import com.generation.entity.Coni;
+import com.generation.entity.Nuotatore;
 import com.generation.entity.Persona;
+import com.generation.entity.Pilota;
+import com.generation.entity.Pugile;
+import com.generation.entity.Tennista;
 
 public class Main {
 
@@ -12,7 +17,8 @@ public class Main {
 		Coni federazione = new Coni("res/sportivi.txt");
 
 		showAllAtletes(federazione);
-		//showCategoryAtletes(federazione, "pugile");
+		showCategoryAtletes(federazione, "pugile");
+		showAtleteByName(federazione, "Muhammad ali");
 		
 	}
 	
@@ -25,14 +31,14 @@ public class Main {
 	
 	private static void showAllAtletes(Coni federation) {
 		for (Persona atleta : federation.getListaAtleti() ) {
-			
+			System.out.println(atleta);
 		}
 	}
 	
 	private static void showCategoryAtletes(Coni federation, String categoria) {
 		boolean notFound = true;
 		for (Persona atleta : federation.getListaAtleti() ) {
-			if(atleta instance of (categoria)) {
+			if(SuppInstanceOfInput (atleta, categoria)) {
 				System.out.println(atleta.toString());
 				notFound = false;
 			}
@@ -42,20 +48,40 @@ public class Main {
 		}
 	}
 	
-	private static void ricercaAtleta(Coni federation, String nominativo) {
+	private static void showAtleteByName(Coni federation, String nominativo) {
 		boolean notFound = true;
 		for (Persona atleta : federation.getListaAtleti() ) {
-			if(atleta[0].equalsIgnoreCase(categoria)) {
-				for(String infoAtleta : atleta) {
-					System.out.print(infoAtleta + ", ");
-				}
+			if (atleta.getNominativo().equalsIgnoreCase(nominativo)) {
+				System.out.print(atleta);
 				System.out.println("\n");
 				notFound = false;
 			}
 		}
 		if (notFound) {
-			System.out.println("Nessun atleta della categoria inserita");
+			System.out.println("Nessun atleta con quel nominativo");
 		}
 	}
+	
+	
+	private static boolean SuppInstanceOfInput(Persona atleta, String categoria) {
+//		return switch (categoria.toLowerCase()) {
+//        case "calciatore", "tennista", "nuotatore", "pugile", "pilota" -> true;
+//        default -> false;
+//		};
+		
+		return switch(categoria.toLowerCase()) {
+		case ("calciatore") -> atleta instanceof Calciatore;
+		case ("tennista") -> atleta instanceof Tennista;
+		case ("nuotatore") -> atleta instanceof Nuotatore;
+		case ("pugile") -> atleta instanceof Pugile;
+		case ("pilota") -> atleta instanceof Pilota;
+		default -> false;
+		};
+		
+		
+	}	
+		
+		
+	
 
 }
