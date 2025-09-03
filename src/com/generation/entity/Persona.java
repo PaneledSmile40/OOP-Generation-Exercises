@@ -11,9 +11,19 @@ public class Persona {
 		this.id = id;
 		this.nome = nome;
 		this.cognome = cognome;
-		this.cittaResidenza = cittaResidenza;
 		this.dob = dob;
+		this.cittaResidenza = cittaResidenza;
 	}
+	
+	public Persona(String[] datiPersona ) {
+		super();
+		this.id = Integer.parseInt(datiPersona[0]);
+		this.nome = datiPersona[1];
+		this.cognome = datiPersona[2];
+		this.dob = LocalDate.parse(datiPersona[3]);
+		this.cittaResidenza = datiPersona[4];
+	}
+	
 	public int getId() {
 		return id;
 	}

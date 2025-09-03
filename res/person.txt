@@ -1,3 +1,4 @@
+id,nome,cognome,dataNascita,citta
 1001,Mario,Rossi,1980-09-08,Milano
 1002,Luigi,Verdi,2003-03-21,Torino
 1003,Sara,Blu,1997-02-16,Bari

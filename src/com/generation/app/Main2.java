@@ -12,7 +12,7 @@ public class Main2 {
 
 	public static void main(String[] args) throws FileNotFoundException {
 		Scanner sc = new Scanner(new File("res/person.txt"));
-		String[] campi = "id,nome,cognome,dataNascita,citta".split(",");
+		String[] campi = sc.nextLine().split(",");
 		List< Map<String, String> > listaMappe = new ArrayList< Map<String, String> >();
 		while (sc.hasNextLine()) {
 			String[] temp = sc.nextLine().split(",");
