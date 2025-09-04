@@ -26,6 +26,18 @@ public class Main {
 	
 	
 	
+	public static void addAtlete(Coni federation, String categoria) {
+		//atleta da inserire?
+		switch(categoria.toLowerCase()) {
+		case ("calciatore") ->  addCalciatore();
+		case ("tennista") -> addTennista();
+		case ("nuotatore") -> addNuotatore();
+		case ("pugile") -> addPugile();
+		case ("pilota") -> addPilota();
+		default -> System.out.println("categoria inserita invalida");
+		};	
+	}
+	
 	
 	
 	
